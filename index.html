@@ -1,43 +1,115 @@
 <!DOCTYPE html>
 <html lang="">
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WebWidgets</title>
     <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
-        <link rel="stylesheet" href="res/css/style.css">
+    <link rel="stylesheet" href="res/css/style.css">
 </head>
 
 <body>
 
+
+    <!-- Fixed navbar -->
+    <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">WebWidgets XS</a>
+        </div>
+        <div class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Home</a></li>
+               <li class=""><a href="#">Downloads</a></li>
+               <li class=""><a href="#">Information</a></li>
+          </ul>
+            <ul class="nav navbar-nav navbar-right">
+             <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Action</a></li>
+                <li><a href="#">Another action</a></li>
+                <li><a href="#">Something else here</a></li>
+                <li class="divider"></li>
+                <li class="dropdown-header">Nav header</li>
+                <li><a href="#">Separated link</a></li>
+                <li><a href="#">One more separated link</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </div>
+
+
     <div class="container">
 
         <div class="jumbotron">
-            <h1>Webwidget Component Layout</h1>
+            <h1>Webwidget Component XS</h1>
 
             <p>
 
                 The Webwidget Info page is designed to speed up your development and as to act as a component support page for futher projects
             </p>
-                <a class="btn btn-primary pull-right">Information</a>
+            <a class="btn btn-primary pull-right">Information</a>
         </div>
 
 
 
 
 
-        <div class="pannel">
+        <div class="pannel pimage img-rounded">
 
-            <p>Diving into the world of Webcomponents
-             <img class="img-rounded img-responsive" src="res/img/dive.jpeg" style="width:100%" alt="Dive with me!">
+
+                <div class="pull-left topset">
+                <h1 class="excite">Diving into the world<br /> of Webcomponents</h1>
+
+                </div>
+
+        </div>
+
+
+
+        <div class="row">
+
+            <div class="col-xs-12 col-sm-6 col-md-6">
+               <h3>The Webwidget Info page is designed to speed up your development and as to act as a component support page for futher projects</h3>
+                <p class="text-justify-md">
+
+                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
                 </p>
+
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-6 ">
+
+                <h3>The Webwidget Info page is designed to speed up your development and as to act as a component support page for futher projects</h3>
+                <p class="text-justify-md">
+                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+                </p>
+            </div>
+
         </div>
 
- The Webwidget Info page is designed to speed up your development and as to act as a component support page for futher projects
+
+
+
 
 
     </div>
-
+<div id="footer" class="container">
+    <nav class="navbar navbar-inverse navbar-fixed-bottom">
+        <div class="navbar-inner navbar-content-center">
+            <p class="text-muted credit">Design by Sascha Beck <a href="#">Sascha Beck</a> and <a href="#">WAK GmbH & Co. KG</a>.</p>
+ </div>
+    </nav>
+</div>
 
     <script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js"></script>
     <script type="text/javascript" src="bower_components/jquery-ui/jquery-ui.min.js"></script>
@@ -46,8 +118,8 @@
     <script type="text/javascript" src="res/js/init.js"></script>
 
     <script type="text/javascript">
-    /* Inline JQuery */
-        $(document).ready(function(){
+        /* Inline JQuery */
+        $(document).ready(function() {
 
 
 
@@ -56,5 +128,6 @@
 
     </script>
 
-    </body>
+</body>
+
 </html>

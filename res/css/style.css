@@ -1,0 +1,28 @@
+body{
+
+    margin-bottom: 80px;
+    margin-top: 80px;
+}
+
+.text-justify-md {
+        text-align: justify;
+    }
+.topset{
+    margin-top: 40px;
+margin-left: 50px;
+
+
+}
+.pimage{
+height: 350px;
+
+background-image: url('res/img/dive_trans.jpg');
+
+}
+.excite{
+
+color:black;
+text-emphasis-color: aqua
+font-weight: bolder;
+
+}
