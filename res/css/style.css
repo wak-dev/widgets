@@ -8,16 +8,16 @@ body{
         text-align: justify;
     }
 .topset{
-    margin-top: 40px;
-margin-left: 50px;
+    width:100%;
+    margin:0 auto;
+
 
 
 }
 .pimage{
 height: 350px;
 
-background-image: url('res/img/dive_trans.jpg');
-
+    background-image: url("../img/dive_trans.jpg");
 }
 .excite{
 
@@ -25,4 +25,8 @@ color:black;
 text-emphasis-color: aqua
 font-weight: bolder;
 
+}
+.jumbotron{
+
+padding: 20px;
 }
