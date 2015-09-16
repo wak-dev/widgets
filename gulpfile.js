@@ -8,3 +8,6 @@ return gulp.src('res/sass/main.scss')
 .pipe(gulp.dest('res/css'))
 
 });
+
+
+gulp.task('default', ['sass']);
