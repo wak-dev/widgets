@@ -14,19 +14,33 @@ body{
 
 
 }
+
+
+
 .pimage{
 height: 350px;
 
     background-image: url("../img/dive_trans.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 .excite{
 
-color:black;
+color:#333;
 text-emphasis-color: aqua
 font-weight: bolder;
-
+    font-size: 4em;
+margin-left: 20px;
+    margin-right: 20px;
+    word-wrap: break-word;
 }
 .jumbotron{
 
 padding: 20px;
+}
+.active{
+
+    background-color: #333;
+
 }
