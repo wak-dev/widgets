@@ -4,7 +4,7 @@ var uglyfly = require('gulp-uglyfly');
 
 gulp.task('sass', function () {
 
-    return gulp.src('res/sass/style.scss')
+    return gulp.src('res/scss/style.scss')
         .pipe(sass())
         .pipe(gulp.dest('res/css'))
 
