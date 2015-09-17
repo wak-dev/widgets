@@ -24,6 +24,7 @@ gulp.task('watch', function () {
 
 gulp.task('compress', function () {
     gulp.src('res/js/*.js')
+    .pipe(plumber())
         .pipe(uglyfly())
         .pipe(gulp.dest('res/dist'))
 });
