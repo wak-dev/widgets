@@ -14,21 +14,25 @@ gulp.task('sass', function () {
 
 });
 
-//watching scss
-gulp.task('watch', function () {
-
-    gulp.watch('res/**/*.scss', ['sass']);
-
-});
-
-
 gulp.task('compress', function () {
-    gulp.src('res/js/*.js')
+    gulp.src('res/**/*.js')
     .pipe(plumber())
         .pipe(uglyfly())
         .pipe(gulp.dest('res/dist'))
 });
 
 
+//watching scss
+gulp.task('watch', function () {
 
-gulp.task('default', ['sass', 'compress', 'watch']);
+    gulp.watch('res/**/*.scss', ['sass']);
+    gulp.watch('res/**/*.js', ['compress']);
+
+});
+
+
+
+
+
+
+gulp.task('default', ['watch']);
