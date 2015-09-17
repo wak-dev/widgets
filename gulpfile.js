@@ -8,8 +8,7 @@ var plumber = require('gulp-plumber');
 gulp.task('sass', function () {
 
     return gulp.src('res/scss/style.scss')
-        .pipe(plumber())
-        .pipe(sass())
+         .pipe(sass())
         .pipe(gulp.dest('res/css'))
 
 });
