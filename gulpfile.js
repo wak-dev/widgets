@@ -28,4 +28,6 @@ gulp.task('compress', function () {
         .pipe(gulp.dest('res/dist'))
 });
 
+
+
 gulp.task('default', ['sass', 'compress', 'watch']);
