@@ -1,6 +1,7 @@
 var gulp = require('gulp');
 var sass = require('gulp-sass');
 var uglyfly = require('gulp-uglyfly');
+var plumber = require('gulp-plumber');
 
 gulp.task('sass', function () {
 
