@@ -7,9 +7,10 @@ var plumber = require('gulp-plumber');
 
 gulp.task('sass', function () {
 
-    return gulp.src('res/scss/style.scss')
+    return gulp.src('res/**/*.scss')
+         .pipe(plumber())
          .pipe(sass())
-        .pipe(gulp.dest('res/css'))
+         .pipe(gulp.dest('res/css'))
 
 });
 
@@ -23,7 +24,6 @@ gulp.task('watch', function () {
 
 gulp.task('compress', function () {
     gulp.src('res/js/*.js')
-        .pipe(plumber())
         .pipe(uglyfly())
         .pipe(gulp.dest('res/dist'))
 });
